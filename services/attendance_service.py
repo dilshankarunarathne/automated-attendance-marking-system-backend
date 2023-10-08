@@ -29,7 +29,7 @@ def query_attendance_by_index(index) -> list[Attendance]:
     return arr
 
 
-def query_attendance_by_date(date) -> list[Attendance] :
+def query_attendance_by_date(date) -> list[Attendance] | str:
     rows = dao.check_attendance_by_date(date)
     arr = []
     if rows is None:
