@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class Grade(BaseModel):
     student_index_number: str
-    semester
+    semester: str
     subject
     marks
     gade
