@@ -23,7 +23,7 @@ def query_attendance_by_index(index):
     return dao.check_attendance_by_index(index)
 
 
-def query_attendance_by_date(date) -> List(Attendance) | None:
+def query_attendance_by_date(date) -> Attendance[] | None:
     rows = dao.check_attendance_by_date(date)
     arr = []
     for row in rows:
