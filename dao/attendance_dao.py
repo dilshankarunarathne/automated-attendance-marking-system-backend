@@ -44,4 +44,4 @@ class AttendanceDAO:
         self.cnx.commit()
         cursor.close()
 
-    def check_attendance_for_student
+    def check_attendance_for_student(self):
