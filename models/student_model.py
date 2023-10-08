@@ -13,4 +13,4 @@ class Student:
         self.name = n
         self.address = a
         self.gender = g
-        self.date_of_birth
+        self.date_of_birth = d
