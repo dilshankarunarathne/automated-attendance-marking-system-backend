@@ -58,5 +58,5 @@ class StudentDAO:
         if row is None:
             return None
         return Student(
-            **dict(zip(['index_number', 'name', 'email', 'contact_number', 'is_admin', 'hashed_password'], row))
+            **dict(zip(['index_number', 'name', 'address', 'contact_number', 'is_admin', 'hashed_password'], row))
         )
