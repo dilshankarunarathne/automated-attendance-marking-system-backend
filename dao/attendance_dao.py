@@ -59,7 +59,7 @@ class AttendanceDAO:
             return None
         return Attendance(row[0], row[1])
 
-    def check_attendance_by_index(self, index_no, date):
+    def check_attendance_by_index(self, index_no):
         cursor = self.cnx.cursor()
         query = ("SELECT * "
                  "FROM  attendance "
