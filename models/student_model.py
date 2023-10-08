@@ -8,7 +8,7 @@ class Student:
         self.parent_name = p
         self.contact_number = c
         self.grade = gr
-        
+
     # index_number: str
     # name: str | None = None
     # address: str | None = None
@@ -17,5 +17,3 @@ class Student:
     # parent_name: str | None = None
     # contact_number: str | None = None
     # grade: str | None = None
-
-
