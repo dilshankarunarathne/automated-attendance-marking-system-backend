@@ -48,8 +48,8 @@ async def search_by_date(
 
 @router.post("search")
 async def search(
-        date: str = Form(...),
         index_number: str = Form(...),
+        date: str = Form(...),
         token: str = Depends(oauth2_scheme)
 ):
     if await get_current_user(token) is None:
