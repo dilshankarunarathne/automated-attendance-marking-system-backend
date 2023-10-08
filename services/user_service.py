@@ -13,12 +13,5 @@ def user_exists(email: str) -> bool:
     return True
 
 
-def get_next_avail_id() -> int:
-    last_id = dao.get_last_user_id()
-    if last_id is None:
-        return 1
-    return last_id + 1
-
-
 def get_user(email: str):
     return dao.get_user_by_email(email)
