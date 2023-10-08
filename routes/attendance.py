@@ -43,3 +43,6 @@ async def search_by_date(
         raise credentials_exception
 
     return query_attendance_by_date(date)
+
+
+
