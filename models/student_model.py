@@ -4,7 +4,7 @@ from pydantic import BaseModel
 class Student(BaseModel):
     index_number: str
     name: str | None = None
-    adress
+    adress: str | None = None
     gender
     date_of_birth
     parent_name
