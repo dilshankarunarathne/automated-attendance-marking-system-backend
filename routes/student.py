@@ -11,7 +11,7 @@ router = APIRouter(
 
 @router.post('/register')
 async def register_new_student(
-        index_number,
+        index_number: str = Form(...),
         name,
         address,
         gender,
