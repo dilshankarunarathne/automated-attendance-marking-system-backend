@@ -46,7 +46,7 @@ async def search_by_date(
     return query_attendance_by_date(date)
 
 
-@router.post("search")
+@router.post("/search")
 async def search(
         index_number: str = Form(...),
         date: str = Form(...),
