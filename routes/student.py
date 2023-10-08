@@ -15,6 +15,6 @@ router = APIRouter(
 
 @router.post('/register')
 async def register_new_student(
-
+token: str = Depends(oauth2_scheme)
 ):
     pass
