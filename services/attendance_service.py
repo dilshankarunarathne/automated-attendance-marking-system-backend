@@ -21,6 +21,13 @@ def mark_attendance(index, date):
 
 def query_attendance_by_index(index) -> list[Attendance]:
     return dao.check_attendance_by_index(index)
+rows = dao.check_attendance_by_date(date)
+    arr = []
+    for row in rows:
+        arr.append(
+            Attendance(row[0], row[1])
+        )
+    return arr
 
 
 def query_attendance_by_date(date) -> list[Attendance]:
