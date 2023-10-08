@@ -1,5 +1,6 @@
 from config import config
 from dao.attendance_dao import AttendanceDAO
+from models.attendance_model import Attendance
 
 dao = AttendanceDAO(
     host=config.get("database", "database.host"),
