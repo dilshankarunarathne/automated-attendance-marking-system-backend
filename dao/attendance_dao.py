@@ -39,7 +39,7 @@ class AttendanceDAO:
     def insert_attendance(self, index_no, date):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO attendance "
-                    "(student_index_number , date "
+                    "(student_index_number, date) "
                     "VALUES (%s, %s)")
         data = (index_no, date)
         cursor.execute(add_user, data)
