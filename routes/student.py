@@ -29,4 +29,6 @@ async def register_new_student(
 
 
 @router.post('/search')
-async def query_student()
+async def query_student(
+        
+)
