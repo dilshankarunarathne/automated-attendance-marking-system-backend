@@ -42,4 +42,4 @@ async def search_by_date(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    return query_attendance_by_date
+    return query_attendance_by_date(date)
