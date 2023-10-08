@@ -4,7 +4,7 @@ This project offers an innovative solution for schools, automating the attendanc
 and enhancing parental engagement. By combining advanced fingerprint recognition technology with a 
 user-friendly web application, our system provides a seamless experience for both educators and parents.
 
-
+## Features
 
 Fingerprint Recognition: Utilizes cutting-edge technology to accurately track student attendance, eliminating manual errors.
 Web Application: A responsive, intuitive web interface for teachers to manage attendance and update student exam results.
