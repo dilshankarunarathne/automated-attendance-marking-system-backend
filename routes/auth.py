@@ -48,6 +48,9 @@ async def register_user(
     The endpoint for registering a new user
 
     Args:
+        contact_number:
+        lastname:
+        firstname:
         username (str): the username of the user
         email (str): the email of the user
         password (str): the password of the user
