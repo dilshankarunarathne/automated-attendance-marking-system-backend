@@ -13,6 +13,3 @@ class Student(BaseModel):
     contact_number: str | None = None
     grade: str | None = None
 
-    def __init__(self, **data: Any):
-        super().__init__(**data)
-        self.index_number=
