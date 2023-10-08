@@ -19,4 +19,4 @@ def mark_attendance(index, date):
 
 
 def query_attendance_by_index(index):
-    return dao.check_attendance_by_index()
+    return dao.check_attendance_by_index(index)
