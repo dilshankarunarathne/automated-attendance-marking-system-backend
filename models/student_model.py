@@ -15,4 +15,4 @@ class Student:
         self.gender = g
         self.date_of_birth = d
         self.parent_name = p
-        self.contact_number
+        self.contact_number = c
