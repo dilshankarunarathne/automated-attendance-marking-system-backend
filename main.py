@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
 import config
-from routes import auth
+from routes import auth, student
 
 app = FastAPI()
 
