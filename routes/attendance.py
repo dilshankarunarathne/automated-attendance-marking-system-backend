@@ -24,7 +24,7 @@ async def mark(
     return "{ message: attendance marked! }"
 
 
-@router.post("search-by-index")
+@router.post("/search-by-index")
 async def search_by_index(
         index_number: str = Form(...),
         token: str = Depends(oauth2_scheme)
