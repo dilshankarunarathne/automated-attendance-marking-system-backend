@@ -58,6 +58,4 @@ class StudentDAO:
         cursor.close()
         if row is None:
             return None
-        return Student(
-            
-        )
+        return print(row)
