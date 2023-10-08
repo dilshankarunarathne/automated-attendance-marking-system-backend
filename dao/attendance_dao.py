@@ -44,7 +44,7 @@ class AttendanceDAO:
         self.cnx.commit()
         cursor.close()
 
-    def check_attendance_for_student_day(self, index_no):
+    def check_attendance_for_student_day(self, index_no, date):
         cursor = self.cnx.cursor()
         query = ("SELECT * "
                  "FROM  attendance "
