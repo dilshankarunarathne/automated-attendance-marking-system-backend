@@ -8,8 +8,8 @@ class Student:
     contact_number: str | None = None
     grade: str | None = None
 
-    def __int__(self, i, n, a, g, d, p, c, g):
+    def __int__(self, i, n, a, g, d, p, c, gr):
         self.index_number = i
         self.name = n
         self.address = a
-        self.gender
+        self.gender = g
