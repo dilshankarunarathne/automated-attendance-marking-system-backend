@@ -51,7 +51,7 @@ async def register_user(
         lastname (str):
         firstname (str):
         email (str): the email of the user
-        contact_number:
+        contact_number (str):
         password (str): the password of the user
         is_admin (bool): whether the user is an admin
 
