@@ -12,3 +12,4 @@ class Student:
         self.index_number = i
         self.name = n
         self.address = a
+        
