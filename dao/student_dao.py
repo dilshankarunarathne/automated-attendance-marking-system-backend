@@ -37,4 +37,4 @@ class StudentDAO:
     def register_student(self):
         pass
 
-    def query_student_details
+    def query_student_details(self):
