@@ -23,4 +23,4 @@ async def mark(
     return "{ message: attendance marked! }"
 
 
-@router
+@router.post()
