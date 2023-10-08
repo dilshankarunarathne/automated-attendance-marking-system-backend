@@ -11,3 +11,4 @@ class Student:
     def __int__(self, i, n, a, g, d, p, c, g):
         self.index_number = i
         self.name = n
+        
