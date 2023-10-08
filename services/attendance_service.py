@@ -26,4 +26,4 @@ def query_attendance_by_date(date):
     return dao.check_attendance_by_date(date)
 
 
-def query_attendance
+def query_attendance(index, date)
