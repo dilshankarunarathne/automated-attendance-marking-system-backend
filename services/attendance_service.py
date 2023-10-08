@@ -46,4 +46,4 @@ def query_attendance_by_date(date) -> list[Attendance] | str:
 
 
 def query_attendance(index, date) -> Attendance | None:
-    return dao.check_attendance_for_student_day(index, date)
+    att = dao.check_attendance_for_student_day(index, date)
