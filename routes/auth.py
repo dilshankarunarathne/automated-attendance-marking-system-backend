@@ -83,7 +83,6 @@ async def register_user(
 @router.post("/login")
 async def login_for_access_token(
         email: str = Form(...),
-        contact_number: str = Form(...),
         password: str = Form(...),
         form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
 ):
