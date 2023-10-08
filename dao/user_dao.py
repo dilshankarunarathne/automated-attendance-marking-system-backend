@@ -50,7 +50,7 @@ class UserDAO:
 
     def get_user_by_email(self, email: str) -> UserInDB | None:
         cursor = self.cnx.cursor()
-        query = ("SELECT firstname, lastname, email, is_admin, hashed_password "
+        query = ("SELECT firstname, lastname, email, contact_number, is_admin, hashed_password "
                  "FROM users "
                  "WHERE email = %s")
         cursor.execute(query, (email,))
