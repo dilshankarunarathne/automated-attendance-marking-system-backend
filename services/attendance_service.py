@@ -33,5 +33,5 @@ def query_attendance_by_date(date):
     return arr
 
 
-def query_attendance(index, date):
+def query_attendance(index, date) -> Attendance | None:
     return dao.check_attendance_for_student_day(index, date)
