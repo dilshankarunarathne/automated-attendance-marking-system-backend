@@ -76,7 +76,7 @@ class AttendanceDAO:
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM attendance WHERE student_index_number = %s"
-            cursor.execute(query, (index_no, ))
+            cursor.execute(query, (date, ))
             rows = cursor.fetchall()
             cursor.close()
             if not rows:
