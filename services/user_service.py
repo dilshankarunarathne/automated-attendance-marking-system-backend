@@ -21,4 +21,4 @@ def get_next_avail_id() -> int:
 
 
 def get_user(email: str):
-    return dao.get_user_by_username(email)
+    return dao.get_user_by_email(email)
