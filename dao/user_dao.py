@@ -58,7 +58,7 @@ class UserDAO:
         cursor.close()
         if row is None:
             return None
-        return UserInDB(**dict(zip(['username', 'email', 'is_admin', 'hashed_password'], row)))
+        return UserInDB(**dict(zip(['firstname', 'email', 'is_admin', 'hashed_password'], row)))
 
     def blacklist_token(self, token: str):
         """
