@@ -49,4 +49,4 @@ def query_attendance(index, date) -> Attendance | None:
     att = dao.check_attendance_for_student_day(index, date)
     if att is None:
         return "{ message: Nothing was found }"
-
+    return att
