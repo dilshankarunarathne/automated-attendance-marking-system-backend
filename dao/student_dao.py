@@ -1,6 +1,8 @@
 import mysql.connector
 from mysql.connector import errorcode
 
+from models.student_model import Student
+
 """
     middleware for accessing the attendance database and performing CRUD operations on the student table
 """
@@ -34,7 +36,7 @@ class StudentDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def register_student(self):
+    def register_student(self, student: Student):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO student "
                     "(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade) "
