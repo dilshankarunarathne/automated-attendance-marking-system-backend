@@ -6,4 +6,4 @@ class Grade(BaseModel):
     semester: str
     subject: str
     marks
-    grade: str | None = None
+    grade: str 
