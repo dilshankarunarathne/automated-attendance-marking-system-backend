@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 
 """
-    middleware for accessing the attendance database and performing CRUD operations on the user table
+    middleware for accessing the attendance database and performing CRUD operations on the student table
 """
 
 
