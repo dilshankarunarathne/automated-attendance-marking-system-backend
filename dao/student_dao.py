@@ -38,7 +38,7 @@ class StudentDAO:
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO student "
                     "(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade) "
-                    "VALUES (%s, %s, %s, %s, %s, %s)")
+                    "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
         data_student = (user.firstname, user.lastname, user.email, user.contact_number, user.is_admin, user.hashed_password)
         cursor.execute(add_user, data_student)
         self.cnx.commit()
