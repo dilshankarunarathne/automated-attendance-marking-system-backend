@@ -6,7 +6,7 @@ user-friendly web application, our system provides a seamless experience for bot
 
 ## Features
 
-- Fingerprint Recognition: Utilizes cutting-edge technology to accurately track student attendance, 
+- **Fingerprint Recognition**: Utilizes cutting-edge technology to accurately track student attendance, 
 eliminating manual errors.
 - Web Application: A responsive, intuitive web interface for teachers to manage attendance and update 
 student exam results.
