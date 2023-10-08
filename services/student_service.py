@@ -16,7 +16,9 @@ except Exception as e:
 
 
 def add_student(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade):
-    return dao.register_student()
+    return dao.register_student(
+        
+    )
 
 
 def get_student(index_number: str):
