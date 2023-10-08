@@ -13,5 +13,5 @@ router = APIRouter(
 @router.post('mark')
 async def mark(
         index_number: str = Form(...),
-date: str = Form(...),
+    date: str = Form(...),
 )
