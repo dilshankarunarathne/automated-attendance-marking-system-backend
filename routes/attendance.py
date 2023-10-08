@@ -28,3 +28,4 @@ async def search_by_index(
         index_number: str = Form(...),
         token: str = Depends(oauth2_scheme)
 ):
+    
