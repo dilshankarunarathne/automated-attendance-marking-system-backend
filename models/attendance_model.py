@@ -2,4 +2,4 @@ class Attendance:
     student_index_number: str
     date: str
 
-    def
+    def __init__(self):
