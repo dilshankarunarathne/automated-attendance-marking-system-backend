@@ -35,4 +35,13 @@ class AttendanceDAO:
             self.cnx.close()
 
     def insert_attendance(self, index_no, date):
-        
+        cursor = self.cnx.cursor()
+        add_user = ("INSERT INTO attendance "
+                    "(index_number, name, address, gender, "
+                    "date_of_birth, parent_name, contact_number, grade) "
+                    "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
+        data_student = (student.index_number, student.name, student.address, student.gender,
+                        student.date_of_birth, student.parent_name, student.contact_number, student.grade)
+        cursor.execute(add_user, data_student)
+        self.cnx.commit()
+        cursor.close()
