@@ -35,3 +35,5 @@ async def query_student(
 ):
     if await get_current_user(token) is None:
         raise credentials_exception
+
+    
