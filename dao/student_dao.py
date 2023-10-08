@@ -49,7 +49,7 @@ class StudentDAO:
 
     def query_student_details(self):
         cursor = self.cnx.cursor()
-        query = ("SELECT firstname, lastname, email, contact_number, is_admin, hashed_password "
+        query = ("SELECT * "
                  "FROM  student "
                  "WHERE email = %s")
         cursor.execute(query, (email,))
