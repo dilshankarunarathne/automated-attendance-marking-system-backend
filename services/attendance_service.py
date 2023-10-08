@@ -1,8 +1,5 @@
-from dao.attendance_dao import AttendanceDAO
-from dao.student_dao import StudentDAO
-
 from config import config
-from models.student_model import Student
+from dao.attendance_dao import AttendanceDAO
 
 dao = AttendanceDAO(
     host=config.get("database", "database.host"),
