@@ -50,4 +50,4 @@ async def search(
         date: str = Form(...),
         index_number: str = Form(...),
         token: str = Depends(oauth2_scheme)
-)
+):
