@@ -13,7 +13,8 @@ student exam results.
 - Real-time Updates: Parents receive instant SMS notifications when their child arrives at school, 
 ensuring timely information.
 - User Roles: Distinct roles for teachers, administrators, and parents, ensuring a tailored experience for each user.
-- Data Analysis: Enables administrators to analyze attendance patterns and student performance trends for data-driven decision-making.
+- Data Analysis: Enables administrators to analyze attendance patterns and student performance trends 
+for data-driven decision-making.
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
