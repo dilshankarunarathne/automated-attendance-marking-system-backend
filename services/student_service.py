@@ -19,5 +19,5 @@ def add_student():
     pass
 
 
-def get_student(index: str):
+def get_student(index_number: str):
     return dao.query_student_details(index_number)
