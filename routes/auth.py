@@ -40,6 +40,7 @@ async def register_user(
         firstname: str = Form(...),
         lastname: str = Form(...),
         email: str = Form(...),
+        contact_number: str = Form(...),
         password: str = Form(...),
         is_admin=False
 ):
