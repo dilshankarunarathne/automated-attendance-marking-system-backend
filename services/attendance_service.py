@@ -22,4 +22,4 @@ def query_attendance_by_index(index):
     return dao.check_attendance_by_index(index)
 
 
-def 
+def query_attendance_by_date
