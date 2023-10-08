@@ -19,11 +19,11 @@ def mark_attendance(index, date):
     return dao.insert_attendance(index, date)
 
 
-def query_attendance_by_index(index) -> list[Attendance]:
+def query_attendance_by_index(index) -> list[Attendance] | str:
     rows = dao.check_attendance_by_index(index)
     if rows is None:
         return "{ message: Nothing was found }"
-    
+
     arr = []
     for row in rows:
         arr.append(
