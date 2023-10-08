@@ -72,6 +72,7 @@ async def register_user(
         firstname=firstname,
         lastname=lastname,
         email=email,
+        contact_number=contact_number,
         hashed_password=hashed_password,
         is_admin=is_admin,
     )
