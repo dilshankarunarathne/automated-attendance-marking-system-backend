@@ -3,4 +3,4 @@ class Attendance:
     date: str
 
     def __init__(self):
-        
+        self.student_index_number = index
