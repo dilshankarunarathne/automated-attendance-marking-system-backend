@@ -1,6 +1,7 @@
 # Automated Attendance Marking System for Schools
 
-This project offers an innovative solution for schools, automating the attendance tracking process and enhancing parental engagement. By combining advanced fingerprint recognition technology with a user-friendly web application, our system provides a seamless experience for both educators and parents.
+This project offers an innovative solution for schools, automating the attendance tracking process 
+and enhancing parental engagement. By combining advanced fingerprint recognition technology with a user-friendly web application, our system provides a seamless experience for both educators and parents.
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
