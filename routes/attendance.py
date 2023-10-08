@@ -45,4 +45,4 @@ async def search_by_date(
     return query_attendance_by_date(date)
 
 
-@router.post()
+@router.post("search")
