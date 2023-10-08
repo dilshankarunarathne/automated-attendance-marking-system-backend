@@ -6,3 +6,4 @@ class Grade(BaseModel):
     semester
     subject
     marks
+    
