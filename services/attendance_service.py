@@ -16,7 +16,7 @@ except Exception as e:
 
 
 def mark_attendance(index, date):
-    return dao.insert_attendance(index, date)
+    dao.insert_attendance(index, date)
 
 
 def query_attendance_by_index(index) -> list[Attendance] | str:
