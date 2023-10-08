@@ -13,7 +13,8 @@ router = APIRouter(
 async def register_new_student(
     index_number,
     name,
-        address, gender, date_of_birth, parent_name, contact_number, grade
+        address,
+        gender, date_of_birth, parent_name, contact_number, grade
     token: str = Depends(oauth2_scheme)
 ):
     if await get_current_user(token) is None:
