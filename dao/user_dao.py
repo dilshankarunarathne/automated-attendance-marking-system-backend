@@ -53,7 +53,7 @@ class UserDAO:
         query = ("SELECT id, username, email, is_admin, hashed_password "
                  "FROM users "
                  "WHERE email = %s")
-        cursor.execute(query, (username,))
+        cursor.execute(query, (email,))
         row = cursor.fetchone()
         cursor.close()
         if row is None:
