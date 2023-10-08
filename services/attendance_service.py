@@ -32,7 +32,8 @@ def query_attendance_by_index(index) -> list[Attendance]:
 def query_attendance_by_date(date) -> list[Attendance]:
     rows = dao.check_attendance_by_date(date)
     arr = []
-    
+    if rows is None:
+        
     for row in rows:
         arr.append(
             Attendance(row[0], row[1])
