@@ -54,4 +54,4 @@ async def search(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    
+    query_attendance
