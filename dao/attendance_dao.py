@@ -39,7 +39,7 @@ class AttendanceDAO:
         add_user = ("INSERT INTO attendance "
                     "(student_index_number , date "
                     "VALUES (%s, %s)")
-        data_student = (student.index_number, student.name, student.address, student.gender,
+        data = (student.index_number, student.name, student.address, student.gender,
                         student.date_of_birth, student.parent_name, student.contact_number, student.grade)
         cursor.execute(add_user, data_student)
         self.cnx.commit()
