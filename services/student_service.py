@@ -1,4 +1,4 @@
-dao = 
+dao = StudentDAO()
 
 
 def add_student():
