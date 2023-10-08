@@ -61,7 +61,7 @@ async def register_user(
     Raises:
         HTTPException: if the username already exists
     """
-    
+
     if user_exists(email):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -69,7 +69,7 @@ async def register_user(
         )
     hashed_password = get_password_hash(password)
     user = UserInDB(
-        username=email,
+        firstname=firstname,
         email=email,
         hashed_password=hashed_password,
         is_admin=is_admin,
