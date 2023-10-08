@@ -1,5 +1,5 @@
 class Student:
-    def __int__(self, i, n, a, g, d, p, c, gr):
+    def __init__(self, i, n, a, g, d, p, c, gr):
         self.index_number = i
         self.name = n
         self.address = a
