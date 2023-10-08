@@ -21,4 +21,5 @@ app.include_router(auth.router)
 
 if __name__ == '__main__':
     uvicorn.run(
-        app, host=config.get("application", "application.host"), port=8000)
+        app,
+        host=config.get("application", "application.host"), port=8000)
