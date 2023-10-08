@@ -28,4 +28,4 @@ async def register_new_student(
     return add_student(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade)
 
 
-
+@router.post()
