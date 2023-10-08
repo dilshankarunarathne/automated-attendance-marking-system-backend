@@ -13,7 +13,7 @@ router = APIRouter(
 async def register_new_student(
         index_number: str = Form(...),
         name: str = Form(...),
-        address,
+        address: str = Form(...),
         gender,
         date_of_birth,
         parent_name,
