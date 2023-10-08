@@ -58,3 +58,16 @@ class AttendanceDAO:
         if row is None:
             return None
         return Attendance(row[0], row[1])
+
+    def check_attendance_for_student_day(self, index_no, date):
+        cursor = self.cnx.cursor()
+        query = ("SELECT * "
+                 "FROM  attendance "
+                 "WHERE index_number = %s"
+                 "AND date = %s")
+        cursor.execute(query, (index_no, date))
+        row = cursor.fetchone()
+        cursor.close()
+        if row is None:
+            return None
+        return Attendance(row[0], row[1])
