@@ -14,7 +14,7 @@ async def register_new_student(
         index_number: str = Form(...),
         name: str = Form(...),
         address: str = Form(...),
-        gender,
+        gender: str = Form(...),
         date_of_birth,
         parent_name,
         contact_number,
