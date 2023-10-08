@@ -13,4 +13,4 @@ router = APIRouter(
 )
 
 @router.post()
-def 
+async def 
