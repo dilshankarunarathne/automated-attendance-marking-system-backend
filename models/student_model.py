@@ -13,3 +13,4 @@ class Student:
         self.name = n
         self.address = a
         self.gender = g
+        
