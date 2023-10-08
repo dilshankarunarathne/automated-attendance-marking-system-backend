@@ -4,4 +4,4 @@ class Attendance:
 
     def __init__(self):
         self.student_index_number = index
-        
+        self.date
