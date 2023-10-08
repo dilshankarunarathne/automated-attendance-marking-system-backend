@@ -59,4 +59,3 @@ class StudentDAO:
             return None
         return UserInDB(
             **dict(zip(['firstname', 'lastname', 'email', 'contact_number', 'is_admin', 'hashed_password'], row)))
-
