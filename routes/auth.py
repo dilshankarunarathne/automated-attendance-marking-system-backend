@@ -89,7 +89,7 @@ async def login_for_access_token(
     The endpoint for logging in a user
 
     Args:
-        email
+        email:
         password:
 
     Returns:
