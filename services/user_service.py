@@ -8,7 +8,7 @@ def add_new_user(user: User):
 
 
 def user_exists(username: str) -> bool:
-    if get_user(username) is None:
+    if get_user(email) is None:
         return False
     return True
 
