@@ -14,5 +14,5 @@ router = APIRouter(
 async def mark(
         index_number: str = Form(...),
         date: str = Form(...),
-        
+token: str = Depends(oauth2_scheme)
 )
