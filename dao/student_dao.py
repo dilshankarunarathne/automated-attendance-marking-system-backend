@@ -37,7 +37,7 @@ class StudentDAO:
     def register_student(self):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO student "
-                    "(firstname, lastname, email, contact_number, is_admin, hashed_password) "
+                    "(index_number, name, address) "
                     "VALUES (%s, %s, %s, %s, %s, %s)")
         data_student = (user.firstname, user.lastname, user.email, user.contact_number, user.is_admin, user.hashed_password)
         cursor.execute(add_user, data_student)
