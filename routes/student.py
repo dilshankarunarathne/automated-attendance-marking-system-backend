@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from fastapi import APIRouter, Depends, Form
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
@@ -18,7 +16,7 @@ async def register_new_student(
         name: str = Form(...),
         address: str = Form(...),
         gender: str = Form(...),
-        date_of_birth: datetime.date = Form(...),
+        date_of_birth: str = Form(...),
         parent_name: str = Form(...),
         contact_number: str = Form(...),
         grade: str = Form(...),
