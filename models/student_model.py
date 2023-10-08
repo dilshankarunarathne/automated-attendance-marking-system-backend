@@ -8,4 +8,5 @@ class Student:
     contact_number: str | None = None
     grade: str | None = None
 
-    
+    def __int__(self):
+        
