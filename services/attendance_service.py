@@ -27,4 +27,4 @@ def query_attendance_by_date(date):
 
 
 def query_attendance(index, date):
-    return dao.check_attendance_for_student_day()
+    return dao.check_attendance_for_student_day(index, date)
