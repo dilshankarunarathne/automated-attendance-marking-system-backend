@@ -15,7 +15,7 @@ except Exception as e:
     print("User DB (user) connection error:", e)
 
 
-def add_student():
+def add_student(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade):
     pass
 
 
