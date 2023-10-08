@@ -35,3 +35,4 @@ class StudentDAO:
             self.cnx.close()
 
     def register_student(self):
+        pass
