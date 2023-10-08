@@ -45,7 +45,7 @@ def query_attendance_by_date(date) -> list[Attendance] | str:
     return arr
 
 
-def query_attendance(index, date) -> Attendance | None:
+def query_attendance(index, date) -> Attendance | str:
     att = dao.check_attendance_for_student_day(index, date)
     if att is None:
         return "{ message: Nothing was found }"
