@@ -11,7 +11,7 @@ eliminating manual errors.
 - Web Application: A responsive, intuitive web interface for teachers to manage attendance and update 
 student exam results.
 - Real-time Updates: Parents receive instant SMS notifications when their child arrives at school, 
-- ensuring timely information.
+ensuring timely information.
 User Roles: Distinct roles for teachers, administrators, and parents, ensuring a tailored experience for each user.
 Data Analysis: Enables administrators to analyze attendance patterns and student performance trends for data-driven decision-making.
 
