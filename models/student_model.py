@@ -16,4 +16,4 @@ class Student:
         self.date_of_birth = d
         self.parent_name = p
         self.contact_number = c
-        
+        self.grade
