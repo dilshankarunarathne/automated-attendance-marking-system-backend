@@ -26,7 +26,9 @@ def query_attendance_by_date(date):
     rows = dao.check_attendance_by_date(date)
     arr = []
     for row in rows:
-        arr.append()
+        arr.append(
+            
+        )
 
 
 def query_attendance(index, date):
