@@ -31,4 +31,4 @@ async def search_by_index(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    return query_attendance_by_index
+    return query_attendance_by_index(index_number)
