@@ -62,7 +62,7 @@ class AttendanceDAO:
     def check_attendance_by_index(self, index_no):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM attendance WHERE student_index_number  = %s"
+            query = "SELECT * FROM attendance WHERE student_index_number = %s"
             cursor.execute(query, (herb,))
             rows = cursor.fetchall()
             cursor.close()
