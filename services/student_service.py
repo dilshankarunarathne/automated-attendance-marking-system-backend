@@ -1,6 +1,7 @@
 from dao.student_dao import StudentDAO
 
 from config import config
+from models.student_model import Student
 
 dao = StudentDAO(
     host=config.get("database", "database.host"),
