@@ -30,5 +30,5 @@ async def register_new_student(
 
 @router.post('/search')
 async def query_student(
-        
+index_number: str = Form(...),
 )
