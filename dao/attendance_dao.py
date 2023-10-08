@@ -72,7 +72,7 @@ class AttendanceDAO:
         except mysql.connector.Error as err:
             print(err)
 
-    def check_attendance_by_index(self, index_no):
+    def check_attendance_by_date(self, date):
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM attendance WHERE student_index_number = %s"
