@@ -20,7 +20,6 @@ def mark_attendance(index, date):
 
 
 def query_attendance_by_index(index) -> list[Attendance]:
-    return
     rows = dao.check_attendance_by_index(index)
     arr = []
     for row in rows:
