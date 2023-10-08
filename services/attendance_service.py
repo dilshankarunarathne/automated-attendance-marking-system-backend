@@ -27,4 +27,4 @@ def query_attendance_by_date(date):
 
 
 def query_attendance(index, date):
-    
+    return 
