@@ -12,4 +12,4 @@ class Student(BaseModel):
     grade: str | None = None
 
     def __init__(self):
-        pass
+        self.index_number=
