@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, Form
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
-from services.attendance_service import mark_attendance, query_attendance_by_index
+from services.attendance_service import mark_attendance, query_attendance_by_index, query_attendance_by_date
 
 router = APIRouter(
     prefix="/api/attendance",
