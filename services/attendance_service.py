@@ -15,4 +15,4 @@ except Exception as e:
 
 
 def mark_attendance(index, date):
-    
+    insert_attendance
