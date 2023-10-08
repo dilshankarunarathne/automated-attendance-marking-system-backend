@@ -71,3 +71,5 @@ class AttendanceDAO:
             return rows
         except mysql.connector.Error as err:
             print(err)
+
+    
