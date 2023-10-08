@@ -50,8 +50,8 @@ class AttendanceDAO:
         cursor = self.cnx.cursor()
         query = ("SELECT * "
                  "FROM  attendance "
-                 "WHERE (student_index_number = %s "
-                 "AND date = %s)")
+                 "WHERE student_index_number = %s "
+                 "AND date = %s")
         cursor.execute(query, (index_no, date))
         row = cursor.fetchone()
         cursor.close()
@@ -63,7 +63,7 @@ class AttendanceDAO:
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM attendance WHERE student_index_number = %s"
-            cursor.execute(query, (herb,))
+            cursor.execute(query, (index_no, ))
             rows = cursor.fetchall()
             cursor.close()
             if not rows:
