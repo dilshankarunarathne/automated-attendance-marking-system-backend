@@ -6,7 +6,7 @@ from mysql.connector import errorcode
 """
 
 
-class UserDAO:
+class StudentDAO:
     def __init__(self, host, user, password, database):
         self.host = host
         self.user = user
