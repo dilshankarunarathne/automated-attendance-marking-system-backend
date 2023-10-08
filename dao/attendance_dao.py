@@ -50,7 +50,7 @@ class AttendanceDAO:
         cursor = self.cnx.cursor()
         query = ("SELECT * "
                  "FROM  attendance "
-                 "WHERE index_number = %s"
+                 "WHERE student_index_number  = %s"
                  "AND date = %s")
         cursor.execute(query, (index_no, date))
         row = cursor.fetchone()
@@ -60,13 +60,14 @@ class AttendanceDAO:
         return Attendance(row[0], row[1])
 
     def check_attendance_by_index(self, index_no):
-        cursor = self.cnx.cursor()
-        query = ("SELECT * "
-                 "FROM  attendance "
-                 "WHERE index_number = %s")
-        cursor.execute(query, (index_no, ))
-        row = cursor.fetch()
-        cursor.close()
-        if row is None:
-            return None
-        return Attendance(row[0], row[1])
+        try:
+            cursor = self.cnx.cursor()
+            query = "SELECT * FROM attendance WHERE herb = %s"
+            cursor.execute(query, (herb,))
+            rows = cursor.fetchall()
+            cursor.close()
+            if not rows:
+                return None
+            return rows
+        except mysql.connector.Error as err:
+            print(err)
