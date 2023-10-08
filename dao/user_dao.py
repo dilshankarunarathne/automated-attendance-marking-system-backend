@@ -42,7 +42,7 @@ class UserDAO:
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO users "
                     "(firstname, lastname, email, contact_number, is_admin, hashed_password) "
-                    "VALUES (%s, %s, %s, %s, %s)")
+                    "VALUES (%s, %s, %s, %s, %s, %s)")
         data_user = (user.id, user.username, user.email, user.is_admin, user.hashed_password)
         cursor.execute(add_user, data_user)
         self.cnx.commit()
