@@ -36,6 +36,6 @@ async def search_by_index(
 
 @router.post("search-by-date")
 async def search_by_date(
-index_number: str = Form(...),
+    index_number: str = Form(...),
         token: str = Depends(oauth2_scheme)
 )
