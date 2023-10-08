@@ -28,7 +28,7 @@ def query_attendance_by_date(date):
     arr = []
     for row in rows:
         arr.append(
-            Attendance(row[0])
+            Attendance(row[0], row[1])
         )
 
 
