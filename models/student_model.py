@@ -1,5 +1,4 @@
 class Student:
-
     index_number: str
     name: str | None = None
     address: str | None = None
