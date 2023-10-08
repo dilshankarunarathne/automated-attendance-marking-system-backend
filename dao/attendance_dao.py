@@ -76,7 +76,8 @@ class AttendanceDAO:
     def check_attendance_by_date(self, date):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM attendance WHERE date = %s"
+            query = ("SELECT * FROM attendance "
+                     "WHERE date = %s")
             cursor.execute(query, (date, ))
             rows = cursor.fetchall()
             cursor.close()
