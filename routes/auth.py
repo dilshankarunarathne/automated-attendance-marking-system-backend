@@ -89,6 +89,8 @@ async def login_for_access_token(
     The endpoint for logging in a user
 
     Args:
+        password:
+        email
 
     Returns:
         (dict) The access token for the user
