@@ -48,4 +48,15 @@ class StudentDAO:
         cursor.close()
 
     def query_student_details(self):
-        pass
+        cursor = self.cnx.cursor()
+        query = ("SELECT firstname, lastname, email, contact_number, is_admin, hashed_password "
+                 "FROM users "
+                 "WHERE email = %s")
+        cursor.execute(query, (email,))
+        row = cursor.fetchone()
+        cursor.close()
+        if row is None:
+            return None
+        return UserInDB(
+            **dict(zip(['firstname', 'lastname', 'email', 'contact_number', 'is_admin', 'hashed_password'], row)))
+
