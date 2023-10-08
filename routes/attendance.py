@@ -5,7 +5,7 @@ from services.student_service import add_student, get_student
 
 router = APIRouter(
     prefix="/api/attendance",
-    tags=["student"],
+    tags=["attendance"],
     responses={404: {"description": "The requested page was not found"}},
 )
 
