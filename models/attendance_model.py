@@ -3,3 +3,4 @@ class Attendance:
     date: str
 
     def __init__(self):
+        
