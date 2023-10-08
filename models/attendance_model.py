@@ -1,3 +1,3 @@
 class Attendance:
     student_index_number: str
-    date:
+    date: str
