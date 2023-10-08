@@ -1,6 +1,7 @@
 # Automated Attendance Marking System for Schools
 
-Student attendance tracking is a crucial aspect of school management, ensuring the safety, accountability, and academic progress of students. Traditional methods are often cumbersome and prone to errors. This report introduces a comprehensive solution employing fingerprint recognition technology and a user-friendly web application to streamline the attendance tracking process and enhance parental engagement.
+Student attendance tracking is a crucial aspect of school management, ensuring the safety, accountability, 
+and academic progress of students. Traditional methods are often cumbersome and prone to errors. This report introduces a comprehensive solution employing fingerprint recognition technology and a user-friendly web application to streamline the attendance tracking process and enhance parental engagement.
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
