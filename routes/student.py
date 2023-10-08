@@ -13,4 +13,4 @@ router = APIRouter(
 )
 
 @router.post()
-async def 
+async def register_student()
