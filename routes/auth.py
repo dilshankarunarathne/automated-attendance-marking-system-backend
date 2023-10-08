@@ -1,15 +1,12 @@
 from datetime import timedelta
-
 from typing import Annotated
 
 from fastapi import APIRouter, Form, HTTPException, status, Depends
-from fastapi.security import OAuth2PasswordRequestForm
-
-from models.user_model import UserInDB
 
 from auth.authorize import authenticate_user, oauth2_scheme
 from auth.hashing import get_password_hash, ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token, blacklist_token
-from services.user_service import user_exists, get_next_avail_id, add_new_user
+from models.user_model import UserInDB
+from services.user_service import user_exists, add_new_user
 
 """
     API router for auth endpoint
@@ -37,8 +34,10 @@ router = APIRouter(
 
 @router.post("/register")
 async def register_user(
-        username: str = Form(...),
+        firstname: str = Form(...),
+        lastname: str = Form(...),
         email: str = Form(...),
+        contact_number: str = Form(...),
         password: str = Form(...),
         is_admin=False
 ):
@@ -46,8 +45,10 @@ async def register_user(
     The endpoint for registering a new user
 
     Args:
-        username (str): the username of the user
+        firstname (str):
+        lastname (str):
         email (str): the email of the user
+        contact_number (str):
         password (str): the password of the user
         is_admin (bool): whether the user is an admin
 
@@ -57,16 +58,18 @@ async def register_user(
     Raises:
         HTTPException: if the username already exists
     """
-    if user_exists(username):
+
+    if user_exists(email):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Username already exists",
         )
     hashed_password = get_password_hash(password)
     user = UserInDB(
-        id=get_next_avail_id(),
-        username=username,
+        firstname=firstname,
+        lastname=lastname,
         email=email,
+        contact_number=contact_number,
         hashed_password=hashed_password,
         is_admin=is_admin,
     )
@@ -76,13 +79,15 @@ async def register_user(
 
 @router.post("/login")
 async def login_for_access_token(
-        form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+        email: Annotated[str, Form()],
+        password: Annotated[str, Form()]
 ):
     """
     The endpoint for logging in a user
 
     Args:
-        form_data (OAuth2PasswordRequestForm): the form data for the user
+        email:
+        password:
 
     Returns:
         (dict) The access token for the user
@@ -90,7 +95,7 @@ async def login_for_access_token(
     Raises:
         HTTPException: if the username or password is incorrect
     """
-    user = authenticate_user(form_data.username, form_data.password)
+    user = authenticate_user(email, password)
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -100,8 +105,7 @@ async def login_for_access_token(
 
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": user.username}, expires_delta=access_token_expires.seconds
-        # Unresolved attribute reference 'username' for class 'bool'
+        data={"sub": user.email}, expires_delta=access_token_expires.seconds
     )
 
     return {"access_token": access_token, "token_type": "bearer"}

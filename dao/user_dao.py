@@ -41,34 +41,24 @@ class UserDAO:
     def create_user(self, user: User):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO users "
-                    "(id, username, email, is_admin, hashed_password) "
-                    "VALUES (%s, %s, %s, %s, %s)")
-        data_user = (user.id, user.username, user.email, user.is_admin, user.hashed_password)
+                    "(firstname, lastname, email, contact_number, is_admin, hashed_password) "
+                    "VALUES (%s, %s, %s, %s, %s, %s)")
+        data_user = (user.firstname, user.lastname, user.email, user.contact_number, user.is_admin, user.hashed_password)
         cursor.execute(add_user, data_user)
         self.cnx.commit()
         cursor.close()
 
-    def get_user_by_username(self, username: str) -> UserInDB | None:
+    def get_user_by_email(self, email: str) -> UserInDB | None:
         cursor = self.cnx.cursor()
-        query = ("SELECT id, username, email, is_admin, hashed_password "
+        query = ("SELECT firstname, lastname, email, contact_number, is_admin, hashed_password "
                  "FROM users "
-                 "WHERE username = %s")
-        cursor.execute(query, (username,))
+                 "WHERE email = %s")
+        cursor.execute(query, (email,))
         row = cursor.fetchone()
         cursor.close()
         if row is None:
             return None
-        return UserInDB(**dict(zip(['id', 'username', 'email', 'is_admin', 'hashed_password'], row)))
-
-    def get_last_user_id(self) -> int:
-        cursor = self.cnx.cursor()
-        query = "SELECT MAX(id) FROM users"
-        cursor.execute(query)
-        row = cursor.fetchone()
-        cursor.close()
-        if row is None:
-            return 0
-        return row[0]
+        return UserInDB(**dict(zip(['firstname', 'lastname', 'email', 'contact_number', 'is_admin', 'hashed_password'], row)))
 
     def blacklist_token(self, token: str):
         """
