@@ -9,4 +9,4 @@ class Student(BaseModel):
     date_of_birth: str | None = None
     parent_name: str | None = None
     contact_number: str | None = None
-    grade
+    grade: str | None = None
