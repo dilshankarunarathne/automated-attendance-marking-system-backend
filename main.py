@@ -23,5 +23,5 @@ if __name__ == '__main__':
     uvicorn.run(
         app,
         host=config.get("application", "application.host"),
-        port=config.get("application", "application.host")
+        port=config.get("application", "application.port")
     )
