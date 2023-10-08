@@ -5,6 +5,7 @@ class User(BaseModel):
     firstname: str | None = None
     lastname: str | None = None
     email: str | None = None
+    
     is_admin: bool | None = None
 
 
