@@ -1,7 +1,6 @@
 from fastapi import APIRouter, Depends, Form
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
-from services.student_service import add_student, get_student
 
 router = APIRouter(
     prefix="/api/attendance",
@@ -19,4 +18,4 @@ async def mark(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    
+
