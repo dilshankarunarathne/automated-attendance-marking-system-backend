@@ -32,4 +32,4 @@ async def register_new_student(
 async def query_student(
         index_number: str = Form(...),
         token: str = Depends(oauth2_scheme)
-)
+):
