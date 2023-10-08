@@ -89,7 +89,6 @@ async def login_for_access_token(
     The endpoint for logging in a user
 
     Args:
-        form_data (OAuth2PasswordRequestForm): the form data for the user
 
     Returns:
         (dict) The access token for the user
