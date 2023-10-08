@@ -47,7 +47,7 @@ class StudentDAO:
         self.cnx.commit()
         cursor.close()
 
-    def query_student_details(self):
+    def query_student_details(self, index_number):
         cursor = self.cnx.cursor()
         query = ("SELECT * "
                  "FROM  student "
@@ -57,4 +57,4 @@ class StudentDAO:
         cursor.close()
         if row is None:
             return None
-        return Studnet()
+        return Student()
