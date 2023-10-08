@@ -61,6 +61,7 @@ async def register_user(
     Raises:
         HTTPException: if the username already exists
     """
+    
     if user_exists(email):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
