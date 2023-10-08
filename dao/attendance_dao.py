@@ -43,3 +43,5 @@ class AttendanceDAO:
         cursor.execute(add_user, data)
         self.cnx.commit()
         cursor.close()
+
+    
