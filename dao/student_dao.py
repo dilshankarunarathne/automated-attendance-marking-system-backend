@@ -52,7 +52,7 @@ class StudentDAO:
         query = ("SELECT * "
                  "FROM  student "
                  "WHERE index_number = %s")
-        cursor.execute(query, (email,))
+        cursor.execute(query, (index_number,))
         row = cursor.fetchone()
         cursor.close()
         if row is None:
