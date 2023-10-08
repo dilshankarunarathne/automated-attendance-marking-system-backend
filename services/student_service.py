@@ -1,3 +1,5 @@
+from dao.student_dao import StudentDAO
+
 dao = StudentDAO(
     host=config.get("database", "database.host"),
     user=config.get("database", "database.user"),
