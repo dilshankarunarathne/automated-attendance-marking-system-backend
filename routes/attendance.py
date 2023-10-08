@@ -38,4 +38,5 @@ async def search_by_index(
 async def search_by_date(
         date: str = Form(...),
         token: str = Depends(oauth2_scheme)
-)
+):
+    
