@@ -2,5 +2,5 @@ def add_student():
     pass
 
 
-def get_student():
+def get_student(index: str):
     pass
