@@ -68,7 +68,7 @@ async def register_user(
         )
     hashed_password = get_password_hash(password)
     user = UserInDB(
-        username=username,
+        username=email,
         email=email,
         hashed_password=hashed_password,
         is_admin=is_admin,
