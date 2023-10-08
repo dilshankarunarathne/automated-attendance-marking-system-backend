@@ -19,7 +19,7 @@ async def register_new_student(
         parent_name,
         contact_number,
         grade,
-    token: str = Depends(oauth2_scheme)
+        token: str = Depends(oauth2_scheme)
 ):
     if await get_current_user(token) is None:
         raise credentials_exception
