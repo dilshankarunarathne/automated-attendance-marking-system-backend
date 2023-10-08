@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class Student(BaseModel):
     index_number: str
-    name
+    name: str | None = None
     adress
     gender
     date_of_birth
