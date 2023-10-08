@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 
 class Student(BaseModel):
-    index_number
+    index_number: str
     name
     adress
     gender
