@@ -19,7 +19,7 @@ def mark_attendance(index, date):
     return dao.insert_attendance(index, date)
 
 
-def query_attendance_by_index(index):
+def query_attendance_by_index(index) -> list[Attendance]:
     return dao.check_attendance_by_index(index)
 
 
