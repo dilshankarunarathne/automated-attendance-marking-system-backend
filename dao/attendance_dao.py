@@ -35,3 +35,4 @@ class AttendanceDAO:
             self.cnx.close()
 
     def insert_attendance(self, index_no, date):
+        
