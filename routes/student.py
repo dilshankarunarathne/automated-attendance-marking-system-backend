@@ -17,4 +17,5 @@ router = APIRouter(
 async def register_new_student(
     token: str = Depends(oauth2_scheme)
 ):
-    pass
+    if await get_current_user(token) is None:
+        raise credentials_exception
