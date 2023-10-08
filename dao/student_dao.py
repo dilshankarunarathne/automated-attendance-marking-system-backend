@@ -42,7 +42,7 @@ class StudentDAO:
                     "(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade) "
                     "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
         data_student = (student.index_number, student.name, student.address, student.gender,
-                        student, student, student, student)
+                        student.date_of_birth, student, student, student)
         cursor.execute(add_user, data_student)
         self.cnx.commit()
         cursor.close()
