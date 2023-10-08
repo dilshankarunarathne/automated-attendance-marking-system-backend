@@ -18,7 +18,7 @@ async def register_new_student(
         date_of_birth: str = Form(...),
         parent_name: str = Form(...),
         contact_number: str = Form(...),
-        grade,
+        grade: str = Form(...),
         token: str = Depends(oauth2_scheme)
 ):
     if await get_current_user(token) is None:
