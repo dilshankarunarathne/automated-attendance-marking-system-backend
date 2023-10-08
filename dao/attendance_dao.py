@@ -65,7 +65,7 @@ class AttendanceDAO:
                  "FROM  attendance "
                  "WHERE index_number = %s")
         cursor.execute(query, (index_no, ))
-        row = cursor.fetchone()
+        row = cursor.fetch()
         cursor.close()
         if row is None:
             return None
