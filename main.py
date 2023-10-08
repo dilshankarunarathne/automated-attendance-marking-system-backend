@@ -19,7 +19,7 @@ app.add_middleware(
 
 app.include_router(auth.router)
 app.include_router(student.router)
-app.include_router()
+app.include_router(attendance.router)
 
 if __name__ == '__main__':
     uvicorn.run(
