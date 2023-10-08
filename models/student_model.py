@@ -1,9 +1,4 @@
-from typing import Any
-
-from pydantic import BaseModel
-
-
-class Student(BaseModel):
+class Student:
     index_number: str
     name: str | None = None
     address: str | None = None
