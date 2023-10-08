@@ -57,5 +57,4 @@ class StudentDAO:
         cursor.close()
         if row is None:
             return None
-        return UserInDB(
-            **dict(zip(['firstname', 'lastname', 'email', 'contact_number', 'is_admin', 'hashed_password'], row)))
+        return Studnet()
