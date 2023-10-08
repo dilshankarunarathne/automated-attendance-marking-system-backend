@@ -41,7 +41,7 @@ class UserDAO:
     def create_user(self, user: User):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO users "
-                    "(username, email, is_admin, hashed_password) "
+                    "(firstname, email, is_admin, hashed_password) "
                     "VALUES (%s, %s, %s, %s, %s)")
         data_user = (user.id, user.username, user.email, user.is_admin, user.hashed_password)
         cursor.execute(add_user, data_user)
