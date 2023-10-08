@@ -45,3 +45,4 @@ class AttendanceDAO:
         cursor.close()
 
     def check_attendance_for_student_day(self, index_no):
+        
