@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 from models.student_model import Student
 
 """
-    middleware for accessing the attendance database and performing CRUD operations on the student table
+    middleware for accessing the attendance database and performing CRUD operations on the attendance table
 """
 
 
