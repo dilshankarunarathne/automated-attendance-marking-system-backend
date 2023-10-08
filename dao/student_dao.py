@@ -38,3 +38,4 @@ class StudentDAO:
         pass
 
     def query_student_details(self):
+        pass
