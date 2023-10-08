@@ -47,7 +47,7 @@ class AttendanceDAO:
     def check_attendance_for_student_day(self, index_no):
         cursor = self.cnx.cursor()
         query = ("SELECT * "
-                 "FROM  student "
+                 "FROM  attendance "
                  "WHERE index_number = %s")
         cursor.execute(query, (index_number,))
         row = cursor.fetchone()
