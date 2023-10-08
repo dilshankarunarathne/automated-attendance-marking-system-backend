@@ -1,5 +1,4 @@
 from config import config
-from models.user_model import User
 
 from dao.user_dao import UserDAO
 
