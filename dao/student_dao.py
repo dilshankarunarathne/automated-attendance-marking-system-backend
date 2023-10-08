@@ -51,7 +51,7 @@ class StudentDAO:
         cursor = self.cnx.cursor()
         query = ("SELECT * "
                  "FROM  student "
-                 "WHERE email = %s")
+                 "WHERE index_number = %s")
         cursor.execute(query, (email,))
         row = cursor.fetchone()
         cursor.close()
