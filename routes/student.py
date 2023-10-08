@@ -25,4 +25,4 @@ async def register_new_student(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    add_student(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade)
+    return add_student(index_number, name, address, gender, date_of_birth, parent_name, contact_number, grade)
