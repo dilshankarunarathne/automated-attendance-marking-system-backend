@@ -12,6 +12,7 @@ router = APIRouter(
     responses={404: {"description": "The requested page was not found"}},
 )
 
+
 @router.post('/register')
 async def register_new_student(
 
