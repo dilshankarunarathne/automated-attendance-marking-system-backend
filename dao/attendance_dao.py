@@ -49,7 +49,7 @@ class AttendanceDAO:
         query = ("SELECT * "
                  "FROM  attendance "
                  "WHERE index_number = %s"
-                 "AND ")
+                 "AND date = ")
         cursor.execute(query, (index_number,))
         row = cursor.fetchone()
         cursor.close()
