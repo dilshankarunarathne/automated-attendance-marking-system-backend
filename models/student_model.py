@@ -12,3 +12,4 @@ class Student(BaseModel):
     grade: str | None = None
 
     def __init__(self):
+        
