@@ -9,4 +9,4 @@ class Student:
     grade: str | None = None
 
     def __int__(self, i, n, a, g, d, p, c, g):
-
+        
