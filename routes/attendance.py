@@ -21,3 +21,6 @@ async def mark(
 
     mark_attendance(index_number, date)
     return "{ message: attendance marked! }"
+
+
+
