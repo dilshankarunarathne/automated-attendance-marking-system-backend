@@ -34,4 +34,4 @@ class AttendanceDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def 
+    def insert_attendance
