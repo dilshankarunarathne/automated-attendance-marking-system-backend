@@ -35,4 +35,6 @@ async def search_by_index(
 
 
 @router.post("search-by-date")
-async def search_by_date()
+async def search_by_date(
+        
+)
