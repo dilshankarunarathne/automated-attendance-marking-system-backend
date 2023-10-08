@@ -8,6 +8,6 @@ from auth.hashing import get_password_hash, ACCESS_TOKEN_EXPIRE_MINUTES, create_
 
 router = APIRouter(
     prefix="/api/student",
-    tags=["auth"],
+    tags=["student"],
     responses={404: {"description": "The requested page was not found"}},
 )
