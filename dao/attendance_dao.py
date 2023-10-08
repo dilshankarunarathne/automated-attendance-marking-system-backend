@@ -1,6 +1,8 @@
 import mysql.connector
 from mysql.connector import errorcode
 
+from models.attendance_model import Attendance
+
 """
     middleware for accessing the attendance database and performing CRUD operations on the attendance table
 """
