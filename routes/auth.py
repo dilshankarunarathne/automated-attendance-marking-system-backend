@@ -49,7 +49,7 @@ async def register_user(
 
     Args:
         lastname (str):
-        firstname:
+        firstname (str):
         email (str): the email of the user
         contact_number:
         password (str): the password of the user
