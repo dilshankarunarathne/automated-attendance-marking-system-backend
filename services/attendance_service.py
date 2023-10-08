@@ -30,7 +30,7 @@ def query_attendance_by_date(date):
         arr.append(
             Attendance(row[0], row[1])
         )
-    return 
+    return arr
 
 
 def query_attendance(index, date):
