@@ -23,7 +23,7 @@ def query_attendance_by_index(index):
 
 
 def query_attendance_by_date(date):
-    return dao.check_attendance_by_date(date)
+    rows dao.check_attendance_by_date(date)
 
 
 def query_attendance(index, date):
