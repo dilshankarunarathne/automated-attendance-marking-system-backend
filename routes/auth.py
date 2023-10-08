@@ -79,8 +79,8 @@ async def register_user(
 
 @router.post("/login")
 async def login_for_access_token(
-        email: Annotated[str, Form(), Depends()],
-        password: Annotated[str, Form(), Depends()]
+        email: Annotated[str, Form()],
+        password: Annotated[str, Form()]
 ):
     """
     The endpoint for logging in a user
