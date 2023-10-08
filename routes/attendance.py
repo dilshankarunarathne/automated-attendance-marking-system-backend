@@ -20,4 +20,4 @@ async def mark(
         raise credentials_exception
 
     mark_attendance(index_number, date)
-    return "{message: attendance marked!}"
+    return "{ message: attendance marked! }"
