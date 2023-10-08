@@ -22,7 +22,7 @@ credentials_exception = HTTPException(
 )
 
 
-def authenticate_user(username: str, password: str):
+def authenticate_user(email: str, password: str):
     user = get_user(username)
     if not user:
         return False
