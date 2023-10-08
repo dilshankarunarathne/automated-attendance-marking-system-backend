@@ -20,4 +20,4 @@ def add_student():
 
 
 def get_student(index: str):
-    pass
+    return 
