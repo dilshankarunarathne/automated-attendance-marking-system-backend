@@ -52,7 +52,7 @@ class UserDAO:
         cursor = self.cnx.cursor()
         query = ("SELECT id, username, email, is_admin, hashed_password "
                  "FROM users "
-                 "WHERE username = %s")
+                 "WHERE email = %s")
         cursor.execute(query, (username,))
         row = cursor.fetchone()
         cursor.close()
