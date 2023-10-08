@@ -70,6 +70,7 @@ async def register_user(
     hashed_password = get_password_hash(password)
     user = UserInDB(
         firstname=firstname,
+        lastname=lastname,
         email=email,
         hashed_password=hashed_password,
         is_admin=is_admin,
