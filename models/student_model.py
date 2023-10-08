@@ -10,3 +10,5 @@ class Student(BaseModel):
     parent_name: str | None = None
     contact_number: str | None = None
     grade: str | None = None
+
+    def __init__(self):
