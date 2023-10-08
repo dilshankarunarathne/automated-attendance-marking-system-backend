@@ -24,4 +24,6 @@ async def mark(
 
 
 @router.post("search-by-index")
-async def search_by_index()
+async def search_by_index(
+        
+)
