@@ -8,9 +8,6 @@ class Student:
     # contact_number: str | None = None
     # grade: str | None = None
 
-    def __init__(self):
-        pass
-
     def __int__(self, i, n, a, g, d, p, c, gr):
         self.index_number = i
         self.name = n
