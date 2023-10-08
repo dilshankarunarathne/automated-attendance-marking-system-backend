@@ -17,7 +17,7 @@ async def register_new_student(
         gender: str = Form(...),
         date_of_birth: str = Form(...),
         parent_name: str = Form(...),
-        contact_number,
+        contact_number: str = Form(...),
         grade,
         token: str = Depends(oauth2_scheme)
 ):
