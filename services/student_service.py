@@ -20,4 +20,4 @@ def add_student():
 
 
 def get_student(index: str):
-    return dao.query_student_details()
+    return dao.query_student_details(index_number)
